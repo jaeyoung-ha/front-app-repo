@@ -54,9 +54,9 @@ jobs:
         uses: imranismail/setup-kustomize@v1
 
       - name: Checkout kustomize repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
-          repository: ${GITHUB_USERNAME}/k8s-manifest-repo
+          repository: jaeyoung-ha
           ref: main
           token: \${{ secrets.ACTION_TOKEN }}
           path: k8s-manifest-repo
