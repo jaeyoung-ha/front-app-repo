@@ -54,7 +54,7 @@ jobs:
         uses: imranismail/setup-kustomize@v1
 
       - name: Checkout kustomize repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
           repository: jaeyoung-ha/k8s-manifest-repo
           ref: main
