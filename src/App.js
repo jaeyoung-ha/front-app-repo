@@ -46,7 +46,7 @@ function App(props) {
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(url);
-      setState(result.data);
+      setState(result.data);  
     };
     fetchData();
     // eslint-disable-next-line
