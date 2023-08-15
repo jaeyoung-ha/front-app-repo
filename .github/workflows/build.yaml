@@ -18,7 +18,8 @@ jobs:
       - name: Build front
         run: |
           npm install
-          npm build
+          npm audit fix
+          npm run build
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
