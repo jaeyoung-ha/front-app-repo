@@ -45,7 +45,7 @@ function App(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios(url);
+      const result = await axios(url);  
       setState(result.data);  
     };
     fetchData();
