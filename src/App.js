@@ -38,7 +38,7 @@ function App(props) {
   const classes = useStyles();
   // const { sections } = props;
   const [ data, setState ] = useState({outcome: []});
-  const [query, setQuery] = useState('eks');
+  const [query, setQuery] = useState('eks');  
   const [search, setSearch] = useState('eks');  
 
   var url = `{backend-ingress ADDRESS}/contents/${search}`
